@@ -53,8 +53,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Dialogue UI\Scripts\Dialogue.cs" />
-     <None Include="Assets\Dialogue UI\Prefabs\example.txt" />
+     <Compile Include="Assets\Dialogue\Scripts\Dialogue.cs" />
+     <Compile Include="Assets\Player\Scripts\PlayerController.cs" />
+     <Compile Include="Assets\Player\Scripts\PlayerMovement.cs" />
+     <None Include="Assets\Dialogue\Prefabs\example.txt" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>D:/OneDrive - personalmicrosoftsoftware.uci.edu/Documents/UCI/Clubs/VGDC/Blinded/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
