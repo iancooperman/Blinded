@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/AudioMechanicsTestScene.unity
+- path: Assets/Scenes/MovementTestScene.unity
   isLoaded: 1
   isActive: 1

@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\Dialogue\Scripts\Dialogue.cs" />
+     <Compile Include="Assets\Player\Scripts\GridMovement.cs" />
      <Compile Include="Assets\Player\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Player\Scripts\PlayerMovement.cs" />
      <None Include="Assets\Dialogue\Prefabs\example.txt" />

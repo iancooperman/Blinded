@@ -12,12 +12,11 @@ GameObject:
   - component: {fileID: 5008306479043170214}
   - component: {fileID: 5008306479043170213}
   - component: {fileID: 5008306479043170212}
+  - component: {fileID: 3090788468920209486}
   - component: {fileID: 7422802811938201597}
-  - component: {fileID: 5008306479043170209}
-  - component: {fileID: 5008306479043170218}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -121,6 +120,19 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.093
+--- !u!114 &3090788468920209486
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5008306479043170208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb614ef3d5e526541a6c48a6a77a6695, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitsPerKeypress: 1
 --- !u!81 &7422802811938201597
 AudioListener:
   m_ObjectHideFlags: 0
@@ -129,28 +141,3 @@ AudioListener:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5008306479043170208}
   m_Enabled: 1
---- !u!114 &5008306479043170209
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5008306479043170208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 322a05b64947ade49b5d03daabf41d58, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &5008306479043170218
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5008306479043170208}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 71a4fcc35b584be458ce80fbff8d34af, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 2
