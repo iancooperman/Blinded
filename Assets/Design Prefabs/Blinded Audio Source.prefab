@@ -146,7 +146,7 @@ MonoBehaviour:
   airAbsorption: 1
   dipoleWeight: 0
   dipolePower: 0
-  occlusionMode: 2
+  occlusionMode: 1
   occlusionMethod: 0
   sourceRadius: 1
   directMixLevel: 1

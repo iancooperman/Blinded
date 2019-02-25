@@ -13,10 +13,11 @@ GameObject:
   - component: {fileID: 254408764381859320}
   - component: {fileID: 254408764381859323}
   - component: {fileID: 254408764381859327}
-  - component: {fileID: 254408764381859317}
   - component: {fileID: 3679873960428681738}
   - component: {fileID: 2721206411647500780}
   - component: {fileID: 254408764381859326}
+  - component: {fileID: 6901974643067189163}
+  - component: {fileID: 4407157479194623365}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -112,14 +113,6 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!81 &254408764381859317
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 254408764381859325}
-  m_Enabled: 1
 --- !u!82 &3679873960428681738
 AudioSource:
   m_ObjectHideFlags: 0
@@ -137,7 +130,7 @@ AudioSource:
   Loop: 0
   Mute: 0
   Spatialize: 1
-  SpatializePostEffects: 0
+  SpatializePostEffects: 1
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
@@ -230,15 +223,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   directBinaural: 1
   interpolation: 0
-  physicsBasedAttenuation: 0
-  airAbsorption: 0
+  physicsBasedAttenuation: 1
+  airAbsorption: 1
   dipoleWeight: 0
   dipolePower: 0
-  occlusionMode: 0
+  occlusionMode: 1
   occlusionMethod: 0
   sourceRadius: 1
   directMixLevel: 1
-  reflections: 0
+  reflections: 1
   indirectBinaural: 0
   indirectMixLevel: 1
   simulationType: 0
@@ -276,3 +269,31 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4eae7d3269f7b0b4c89ee9bcbe8b9ca1, type: 3}
   - {fileID: 8300000, guid: f9829acf692c31d47bf649d99ced9ba2, type: 3}
   wallHitSound: {fileID: 8300000, guid: 21a055b9d93ca7c49ab1d1136a662651, type: 3}
+--- !u!81 &6901974643067189163
+AudioListener:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254408764381859325}
+  m_Enabled: 1
+--- !u!114 &4407157479194623365
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 254408764381859325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 052d599a015141b47a4d10676f2dac29, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  useAllProbeBoxes: 0
+  probeBoxes: []
+  bakedProbeNames: []
+  bakedProbeDataSizes: 
+  bakedDataSize: 0
+  bakedStatsFoldout: 0
+  bakeToggle: 0
+  currentStaticListenerNode: {fileID: 0}
