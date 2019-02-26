@@ -9,6 +9,7 @@ public class Dialogue : MonoBehaviour
 
     
     Queue<string> sentences = new Queue<string>();
+    Queue<string> names = new Queue<string>();
 
 
     Text nameText;
@@ -38,7 +39,10 @@ public class Dialogue : MonoBehaviour
         nameText.text = lines[0]; // Set name from file
 
         for (int i = 1; i < lines.Length; i++) { // Put sentences from file into sentence Queue.
-            sentences.Enqueue(lines[i]);
+            string[] line = lines[i].Split(',');
+
+            sentences.Enqueue(line[1]);
+            names.Enqueue(line[0]);
         }
     }
 
@@ -57,12 +61,16 @@ public class Dialogue : MonoBehaviour
         }
         else {
             string sentence = sentences.Dequeue();
+            string name = names.Dequeue();
+
+            nameText.text = name;
             StartCoroutine(TypeSentence(sentence));
         }
     }
 
     public void ResetDialogue() {
         sentences.Clear();
+        names.Clear();
         ParseFile();
     }
 
