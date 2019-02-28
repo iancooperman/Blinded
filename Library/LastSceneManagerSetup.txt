@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Dev Rooms/DialogueTestScene.unity
+- path: Assets/Scenes/Dev Rooms/Full Level Demo.unity
   isLoaded: 1
   isActive: 1
