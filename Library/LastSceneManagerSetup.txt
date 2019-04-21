@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Dev Rooms/Stage 1 -Armando.unity
+- path: Assets/Scenes/Dev Rooms/Stage Pause -Armando.unity
   isLoaded: 1
   isActive: 1
