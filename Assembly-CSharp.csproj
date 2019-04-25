@@ -60,9 +60,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Design Prefabs\Player\Scripts\FootSteps.cs" />
     <Compile Include="Assets\Design Prefabs\Player\Scripts\GridMovement.cs" />
+    <Compile Include="Assets\Design Prefabs\Player\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Design Prefabs\Player\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Design Prefabs\Player\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Design Prefabs\Player\Scripts\TerrainDetector.cs" />
     <Compile Include="Assets\Dialogue\Scripts\Dialogue.cs" />
     <Compile Include="Assets\MainMenu.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\CameraControls.cs" />

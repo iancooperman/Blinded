@@ -25,6 +25,7 @@ public class GridMovement : MonoBehaviour
     void Update()
     {
         Move();
+        Pause();
     }
 
     void Move() {
@@ -45,6 +46,15 @@ public class GridMovement : MonoBehaviour
         }
     }
 
+    void Pause()
+    {
+        if (Input.GetKeyDown("escape"))
+        {
+
+            //SceneManager.LoadScene('Stage Pause - Armando');
+
+        }
+    }
     void PlayStepSound() {
         if (stepSounds.Count > 0) {
             int index = Random.Range(0, stepSounds.Count - 1);
