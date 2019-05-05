@@ -7,6 +7,8 @@ public class GridMovement : MonoBehaviour
 
     public float unitsPerKeypress = 1f;
     public List<AudioClip> stepSounds;
+    public List<AudioClip> WoodStepSounds;//ADDED
+    public List<AudioClip> SnowStepSounds;//ADDED
     public AudioClip wallHitSound;
 
     private Rigidbody rb;
@@ -61,6 +63,28 @@ public class GridMovement : MonoBehaviour
             audioSource.clip = stepSounds[index];
             audioSource.Play();
         }
+
+        /*if (stepSounds.Count > 0)
+        {
+            if (ground == stone)
+            {
+                int index = Random.Range(0, stepSounds.Count - 1);
+                audioSource.clip = stepSounds[index];
+                audioSource.Play();
+            }
+            else if (ground == snow)
+            {
+                int index = Random.Range(0, SnowStepSounds.Count - 1);
+                audioSource.clip = stepSounds[index];
+                audioSource.Play();
+            }
+             else
+            {
+                int index = Random.Range(0, WoodStepSounds.Count - 1);
+                audioSource.clip = stepSounds[index];
+                audioSource.Play();
+            }*/
+}
     }
 
     void PlayWallHitSound() {

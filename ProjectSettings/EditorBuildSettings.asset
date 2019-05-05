@@ -9,9 +9,12 @@ EditorBuildSettings:
     path: 
     guid: 00000000000000000000000000000000
   - enabled: 1
-    path: Assets/Scenes/Dev Rooms/Stage Pause -Armando.unity
-    guid: d393936abc25b0f4db65359f31d6f910
+    path: Assets/Scenes/Dev Rooms/Main Menu -Armando.unity
+    guid: 75e06f30c3bebba40bb4f45eab956842
   - enabled: 1
     path: Assets/Scenes/Dev Rooms/Stage 1 -Armando.unity
     guid: a7b1c996ca2277044be9d84bbfc8556e
+  - enabled: 1
+    path: Assets/Scenes/Dev Rooms/Stage Pause -Armando.unity
+    guid: d393936abc25b0f4db65359f31d6f910
   m_configObjects: {}
