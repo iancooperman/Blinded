@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Design Prefabs\Door\DoorScript.cs" />
      <Compile Include="Assets\Design Prefabs\Player\Scripts\GridMovement.cs" />
      <Compile Include="Assets\Design Prefabs\Player\Scripts\PlayerController.cs" />
      <Compile Include="Assets\Design Prefabs\Player\Scripts\PlayerMovement.cs" />
