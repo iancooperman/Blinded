@@ -15,6 +15,13 @@ public class GridMovement : MonoBehaviour
     private SphereCollider c;
     private AudioSource audioSource;
 
+    public GameObject snow;
+    public GameObject wood;
+    public GameObject stone;
+    //public <List>
+
+    public enum StepSound { Stone, Snow, Wood };
+
     // Start is called before the first frame update
     void Start()
     {
@@ -52,39 +59,71 @@ public class GridMovement : MonoBehaviour
     {
         if (Input.GetKeyDown("escape"))
         {
-
             //SceneManager.LoadScene('Stage Pause - Armando');
-
         }
     }
-    void PlayStepSound() {
-        if (stepSounds.Count > 0) {
-            int index = Random.Range(0, stepSounds.Count - 1);
-            audioSource.clip = stepSounds[index];
-            audioSource.Play();
-        }
-
-        /*if (stepSounds.Count > 0)
+    public void PlayStepSound(StepSound sound) {
+        switch (sound)
         {
-            if (ground == stone)
+            case StepSound.Snow:
+            {
+                int index = Random.Range(0, SnowStepSounds.Count - 1);
+                audioSource.clip = SnowStepSounds[index];
+                audioSource.Play();
+                //Debug.Log("This is SNOW");
+                break;
+            }
+
+            case StepSound.Wood:
+            {
+                int index = Random.Range(0, WoodStepSounds.Count - 1);
+                audioSource.clip = WoodStepSounds[index];
+                audioSource.Play();
+                //Debug.Log("This is WOOD");
+                break;
+            }
+
+            default:
             {
                 int index = Random.Range(0, stepSounds.Count - 1);
                 audioSource.clip = stepSounds[index];
                 audioSource.Play();
+                break;
             }
-            else if (ground == snow)
+                
+        }
+
+        /*if (stepSounds.Count > 0) {
+            int index = Random.Range(0, stepSounds.Count - 1);
+            audioSource.clip = stepSounds[index];
+            audioSource.Play();
+        }*/
+
+        //if (stepSounds.Count > 0)
+       // {
+            /*if (false/*rb.position.y == stone)//STONE
+            {
+                //GameObject originalGameObject = GameObject.Find("MainObj");
+                //GameObject child = originalGameObject.transform.GetChild(0).gameObject;
+                int index = Random.Range(0, stepSounds.Count - 1);
+                audioSource.clip = stepSounds[index];
+                audioSource.Play();
+            }
+            else if (rb.position.y == snow.transform.position.y)//SNOW
             {
                 int index = Random.Range(0, SnowStepSounds.Count - 1);
-                audioSource.clip = stepSounds[index];
+                audioSource.clip = SnowStepSounds[index];
                 audioSource.Play();
             }
-             else
+             else//WOOD - default
             {
                 int index = Random.Range(0, WoodStepSounds.Count - 1);
-                audioSource.clip = stepSounds[index];
+                audioSource.clip = WoodStepSounds[index];
                 audioSource.Play();
             }*/
-}
+
+           // if ()
+        //}
     }
 
     void PlayWallHitSound() {
@@ -96,7 +135,6 @@ public class GridMovement : MonoBehaviour
 
         float radius = c.radius * transform.lossyScale.x;
 
-
         // Designers must make sure walls and other obstacles are given the layer of obstacle.
         int ObstacleLayer = LayerMask.GetMask("Obstacle");
 
@@ -104,18 +142,14 @@ public class GridMovement : MonoBehaviour
 
         bool overlap = Physics.BoxCast(rb.position, Vector3.one * radius, direction, out hit, Quaternion.identity, unitsPerKeypress);
 
-        
-
         if (!overlap) {
             Debug.Log("There is no wall.");
             rb.MovePosition(rb.position + direction * unitsPerKeypress);
-            PlayStepSound();
+            PlayStepSound(StepSound.Stone);
         }
         else {
             Debug.Log("There's a wall here, dumbass.");
             PlayWallHitSound();
         }
-
-        
     }
 }
