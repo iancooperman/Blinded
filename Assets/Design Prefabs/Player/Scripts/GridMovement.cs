@@ -7,8 +7,13 @@ public class GridMovement : MonoBehaviour
 
     public float unitsPerKeypress = 1f;
     public List<AudioClip> stepSounds;
-    public List<AudioClip> WoodStepSounds;//ADDED
-    public List<AudioClip> SnowStepSounds;//ADDED
+    public List<AudioClip> WoodStepSounds;
+    public List<AudioClip> SnowStepSounds;
+    public List<AudioClip> MetalStepSounds;
+    public List<AudioClip> GrassStepSounds;
+    public List<AudioClip> WaterStepSounds;
+    public List<AudioClip> DirtStepSounds;
+    public List<AudioClip> MudStepSounds;
     public AudioClip wallHitSound;
 
     private Rigidbody rb;
@@ -18,9 +23,14 @@ public class GridMovement : MonoBehaviour
     public GameObject snow;
     public GameObject wood;
     public GameObject stone;
+    public GameObject metal;
+    public GameObject grass;
+    public GameObject water;
+    public GameObject dirt;
+    public GameObject mud;
     //public <List>
 
-    public enum StepSound { Stone, Snow, Wood };
+    public enum StepSound { Stone, Snow, Wood, Metal, Grass, Water, Dirt, Mud };
 
     // Start is called before the first frame update
     void Start()
@@ -83,6 +93,51 @@ public class GridMovement : MonoBehaviour
                 break;
             }
 
+            case StepSound.Metal:
+             {
+                 int index = Random.Range(0, MetalStepSounds.Count - 1);
+                 audioSource.clip = MetalStepSounds[index];
+                 audioSource.Play();
+                 //Debug.Log("This is METAL");
+                 break;
+             }
+
+             case StepSound.Grass:
+             {
+                 int index = Random.Range(0, GrassStepSounds.Count - 1);
+                 audioSource.clip = GrassStepSounds[index];
+                 audioSource.Play();
+                 //Debug.Log("This is GRASS");
+                 break;
+             }
+
+            case StepSound.Water:
+            {
+                int index = Random.Range(0, WaterStepSounds.Count - 1);
+                audioSource.clip = WaterStepSounds[index];
+                audioSource.Play();
+                //Debug.Log("This is WATER");
+                break;
+            }
+
+            case StepSound.Dirt:
+            {
+                int index = Random.Range(0, DirtStepSounds.Count - 1);
+                audioSource.clip = DirtStepSounds[index];
+                audioSource.Play();
+                //Debug.Log("This is DIRT");
+                break;
+            }
+
+            case StepSound.Mud:
+            {
+                int index = Random.Range(0, MudStepSounds.Count - 1);
+                audioSource.clip = MudStepSounds[index];
+                audioSource.Play();
+                //Debug.Log("This is MUD");
+                break;
+            }
+            
             default:
             {
                 int index = Random.Range(0, stepSounds.Count - 1);

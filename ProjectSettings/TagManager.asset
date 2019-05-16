@@ -7,6 +7,11 @@ TagManager:
   - Obstacle
   - FootstepSnow
   - FootstepWood
+  - FootstepMetal
+  - FootstepGrass
+  - FootstepWater
+  - FootstepDirt
+  - FootstepMud
   layers:
   - Default
   - TransparentFX
