@@ -28,7 +28,6 @@ public class GridMovement : MonoBehaviour
     public GameObject water;
     public GameObject dirt;
     public GameObject mud;
-    //public <List>
 
     public enum StepSound { Stone, Snow, Wood, Metal, Grass, Water, Dirt, Mud };
 
@@ -144,41 +143,8 @@ public class GridMovement : MonoBehaviour
                 audioSource.clip = stepSounds[index];
                 audioSource.Play();
                 break;
-            }
-                
+            }       
         }
-
-        /*if (stepSounds.Count > 0) {
-            int index = Random.Range(0, stepSounds.Count - 1);
-            audioSource.clip = stepSounds[index];
-            audioSource.Play();
-        }*/
-
-        //if (stepSounds.Count > 0)
-       // {
-            /*if (false/*rb.position.y == stone)//STONE
-            {
-                //GameObject originalGameObject = GameObject.Find("MainObj");
-                //GameObject child = originalGameObject.transform.GetChild(0).gameObject;
-                int index = Random.Range(0, stepSounds.Count - 1);
-                audioSource.clip = stepSounds[index];
-                audioSource.Play();
-            }
-            else if (rb.position.y == snow.transform.position.y)//SNOW
-            {
-                int index = Random.Range(0, SnowStepSounds.Count - 1);
-                audioSource.clip = SnowStepSounds[index];
-                audioSource.Play();
-            }
-             else//WOOD - default
-            {
-                int index = Random.Range(0, WoodStepSounds.Count - 1);
-                audioSource.clip = WoodStepSounds[index];
-                audioSource.Play();
-            }*/
-
-           // if ()
-        //}
     }
 
     void PlayWallHitSound() {

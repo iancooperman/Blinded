@@ -66,6 +66,7 @@
     <Compile Include="Assets\Design Prefabs\Player\Scripts\MainMenu.cs" />
     <Compile Include="Assets\Design Prefabs\Player\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Design Prefabs\Player\Scripts\PlayerMovement.cs" />
+    <Compile Include="Assets\Design Prefabs\Player\Scripts\Respawn.cs" />
     <Compile Include="Assets\Dialogue\Scripts\Dialogue.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\CameraControls.cs" />
     <Compile Include="Assets\ProCore\ProBuilder\API Examples\Icosphere FFT\Scripts\IcoBumpin.cs" />

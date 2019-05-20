@@ -12,6 +12,7 @@ TagManager:
   - FootstepWater
   - FootstepDirt
   - FootstepMud
+  - FootstepDeath
   layers:
   - Default
   - TransparentFX
