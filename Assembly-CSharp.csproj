@@ -60,6 +60,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Design Prefabs\Dialogue Manager\DialogueManager.cs" />
     <Compile Include="Assets\Design Prefabs\Door\DoorScript.cs" />
     <Compile Include="Assets\Design Prefabs\Keypad\KeypadScript.cs" />
     <Compile Include="Assets\Design Prefabs\Player\Scripts\GridMovement.cs" />
