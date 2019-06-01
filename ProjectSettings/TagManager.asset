@@ -5,6 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Obstacle
+  - FootstepSnow
+  - FootstepWood
+  - FootstepMetal
+  - FootstepGrass
+  - FootstepWater
+  - FootstepDirt
+  - FootstepMud
   layers:
   - Default
   - TransparentFX
