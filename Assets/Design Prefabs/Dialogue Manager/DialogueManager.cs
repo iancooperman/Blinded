@@ -10,12 +10,14 @@ public class DialogueManager : MonoBehaviour
 
     private Queue<DialogueClip> dialogues;
     private AudioSource audioSource;
+    private GameObject player;
 
     // Start is called before the first frame update
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
         dialogues = new Queue<DialogueClip>();
+        player = GameObject.Find("Player");
         StartCoroutine("PlayDialogue");
     }
 
@@ -30,6 +32,18 @@ public class DialogueManager : MonoBehaviour
         
     }
 
+    public void DisablePlayerMovementUntilDialogueOver()
+    {
+        StartCoroutine("DisablePlayerMovement");
+    }
+
+
+    IEnumerator DisablePlayerMovement()
+    {
+        player.GetComponent<GridMovement>().enabled = false;
+        yield return new WaitWhile(() => dialogues.Count > 0);
+        player.GetComponent<GridMovement>().enabled = true;
+    }
 
     public void AddDialogue(AudioClip voiceClip, string subtitle)
     {
