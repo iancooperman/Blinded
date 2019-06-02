@@ -268,7 +268,78 @@ MonoBehaviour:
   - {fileID: 8300000, guid: bafe33fc4698e484fae1b832c8477494, type: 3}
   - {fileID: 8300000, guid: 4eae7d3269f7b0b4c89ee9bcbe8b9ca1, type: 3}
   - {fileID: 8300000, guid: f9829acf692c31d47bf649d99ced9ba2, type: 3}
-  wallHitSound: {fileID: 8300000, guid: 21a055b9d93ca7c49ab1d1136a662651, type: 3}
+  WoodStepSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  SnowStepSounds:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  MetalStepSounds:
+  - {fileID: 8300000, guid: 3ad79f23d5bd31b4a976db7cc84cb128, type: 3}
+  - {fileID: 8300000, guid: 0cf0611132cd7204c97ec2afe897a7a5, type: 3}
+  - {fileID: 8300000, guid: fb3f4d33e62d11d46b6ae0bcb867b13d, type: 3}
+  - {fileID: 8300000, guid: 8e0e9c5c29fa10a41bb0aabf1d82380d, type: 3}
+  - {fileID: 8300000, guid: daf3907ae14638247afd8df46fe52f08, type: 3}
+  - {fileID: 8300000, guid: 01aeee4e6e281a745820f1b499044412, type: 3}
+  - {fileID: 8300000, guid: 5bfbf4ee912bc224f9fdd28e9508c60b, type: 3}
+  - {fileID: 8300000, guid: 436232600682914469dfa1986131335b, type: 3}
+  - {fileID: 8300000, guid: f60fa1895e34928409e780a610173788, type: 3}
+  - {fileID: 8300000, guid: 76be5f7bd3ed0a04eb0888f5ef792c6c, type: 3}
+  GrassStepSounds:
+  - {fileID: 8300000, guid: 4857b2314713d794d85898a5cd4c8ae4, type: 3}
+  - {fileID: 8300000, guid: 1fc514cd70130884299d3e1c4e23558e, type: 3}
+  - {fileID: 8300000, guid: b3a2fad266a54cc42bdbf2d6555698fa, type: 3}
+  - {fileID: 8300000, guid: f6d3607e2289d0e46bc1e9b80d65d0fe, type: 3}
+  - {fileID: 8300000, guid: f0fdda1ad29133b4d9842f169f71ac72, type: 3}
+  - {fileID: 8300000, guid: 1e89c0952f9128c468bafab76c4488c7, type: 3}
+  - {fileID: 8300000, guid: e184a3af60468e144b93bea46643ce01, type: 3}
+  - {fileID: 8300000, guid: 4d9a21c65989f604bb62684af58462f2, type: 3}
+  - {fileID: 8300000, guid: efcab97db76c63e4a9e15c5e238f0f7a, type: 3}
+  - {fileID: 8300000, guid: 2dcdcdba66e8d8549bd1c7aa679ee650, type: 3}
+  WaterStepSounds:
+  - {fileID: 8300000, guid: eed121e18a240804a8a4f25e2828c207, type: 3}
+  - {fileID: 8300000, guid: d449e6f11f4360e4193149bfb017e9cd, type: 3}
+  - {fileID: 8300000, guid: d348a59e0b0374c44bffb432c2322847, type: 3}
+  - {fileID: 8300000, guid: 52a9c238bacbf754f9b9efc7415af8ee, type: 3}
+  - {fileID: 8300000, guid: 97d6317cf9604174b95a19e5be60a199, type: 3}
+  - {fileID: 8300000, guid: e94c29dbded676f488af7a055f66fafb, type: 3}
+  - {fileID: 8300000, guid: 7d774868bccbadc44b51b28fef0d03f9, type: 3}
+  - {fileID: 8300000, guid: c63c35a6a0f33c24980f4423ca3e7e0e, type: 3}
+  - {fileID: 8300000, guid: 084befeae27f43842a6777aacc1ad0c1, type: 3}
+  DirtStepSounds:
+  - {fileID: 8300000, guid: 6fcaab7d1545fb34babcec9468686b0f, type: 3}
+  - {fileID: 8300000, guid: 0b77eeb6a28367849a2a564feda1254e, type: 3}
+  - {fileID: 8300000, guid: 00686cfddb2c6d9418d1f4999f450451, type: 3}
+  - {fileID: 8300000, guid: 4c94b3afccbd1e94480ab8ea0f6105fd, type: 3}
+  - {fileID: 8300000, guid: c1abe40b5dadf904ab8490aeebc6fbea, type: 3}
+  - {fileID: 8300000, guid: 24525eaa1574e024d87ad0d75a5d0b88, type: 3}
+  - {fileID: 8300000, guid: 9d091c1d5c85f844599052c9cdb8f6e8, type: 3}
+  - {fileID: 8300000, guid: 5584e32d4bea53847b3bddb24841bab0, type: 3}
+  - {fileID: 8300000, guid: 8574ffb0e8883d842b40c5f71a3da9c7, type: 3}
+  - {fileID: 8300000, guid: 720ad5c92cd46b441b2d514505ae7712, type: 3}
+  MudStepSounds:
+  - {fileID: 8300000, guid: e901e48dff17d4b48b79bb38202a022a, type: 3}
+  - {fileID: 8300000, guid: dc74878cb9ba76840aa0b42cbd96aa82, type: 3}
+  - {fileID: 8300000, guid: 2c7cadf1853f61d4a8c4f0363beec75d, type: 3}
+  - {fileID: 8300000, guid: da5e2e577ee2c31409f6b98dff848bc6, type: 3}
+  - {fileID: 8300000, guid: e2fd1b023b065bc428e97bbc167c7e04, type: 3}
+  - {fileID: 8300000, guid: 9b247acfb9f5c4a4baebd64c68d85f4e, type: 3}
+  - {fileID: 8300000, guid: e4c3ea51e3db0cc409116f09fc3cf9ef, type: 3}
+  - {fileID: 8300000, guid: c4131fc43e02bbb49b71b0717bc43b7a, type: 3}
+  - {fileID: 8300000, guid: 7c709298fb5af184bb58e7b5263a551f, type: 3}
+  wallHitSound: {fileID: 8300000, guid: ff87698f8e121344fadff39d90ad1823, type: 3}
+  snow: {fileID: 0}
+  wood: {fileID: 0}
+  stone: {fileID: 0}
+  metal: {fileID: 0}
+  grass: {fileID: 0}
+  water: {fileID: 0}
+  dirt: {fileID: 0}
+  mud: {fileID: 0}
 --- !u!81 &6901974643067189163
 AudioListener:
   m_ObjectHideFlags: 0
