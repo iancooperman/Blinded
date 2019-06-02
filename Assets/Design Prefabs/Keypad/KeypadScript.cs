@@ -7,8 +7,13 @@ using System.Linq;
 public class KeypadScript : MonoBehaviour
 {
     public GameObject player;
+    public AudioSource audioSource;
     public List<char> keyCombo;
     private List<char> input;
+
+    public AudioClip keypadPress;
+    public AudioClip keypadSuccess;
+    public AudioClip keypadWrongInput;
 
 
     private bool movementDisabled;
@@ -37,7 +42,11 @@ public class KeypadScript : MonoBehaviour
         if (keyCombo.SequenceEqual(input))
         {
             Debug.Log("Accepted!");
+            PlaySound(keypadSuccess);
             keypadActivated = true;
+
+            StartCoroutine(Delay(1));
+
             EnablePlayerMovement(player);
             gameObject.SetActive(false);
         }
@@ -49,6 +58,8 @@ public class KeypadScript : MonoBehaviour
     {
         if (Input.GetKeyDown(c.ToString()) && input.Count < keyCombo.Count) // if the target key is down
         {
+            PlaySound(keypadPress);
+
             if (keyCombo[input.Count] == c) // if the target key equals the corresponding part of the keycode
             {
                 Debug.Log("Acceptable.");
@@ -58,6 +69,8 @@ public class KeypadScript : MonoBehaviour
             {
                 Debug.Log("Unacceptable!");
                 input.Clear(); // otherwise, erase the input
+
+                PlaySound(keypadWrongInput);
             }
         }
 
@@ -88,4 +101,17 @@ public class KeypadScript : MonoBehaviour
     {
         return keypadActivated;
     }
+
+
+    private void PlaySound(AudioClip ac)
+    {
+        audioSource.clip = ac;
+        audioSource.Play();
+    }
+
+    IEnumerator Delay(float s)
+    {
+        yield return new WaitForSeconds(s);
+    }
+
 }
