@@ -63,6 +63,7 @@
     <Compile Include="Assets\Design Prefabs\Dialogue Manager\DialogueManager.cs" />
     <Compile Include="Assets\Design Prefabs\Door\DoorScript.cs" />
     <Compile Include="Assets\Design Prefabs\Keypad\KeypadScript.cs" />
+    <Compile Include="Assets\Design Prefabs\Player\Scripts\Ball Script.cs" />
     <Compile Include="Assets\Design Prefabs\Player\Scripts\Floor.cs" />
     <Compile Include="Assets\Design Prefabs\Player\Scripts\FloorCollider.cs" />
     <Compile Include="Assets\Design Prefabs\Player\Scripts\GridMovement.cs" />
