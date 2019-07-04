@@ -5,7 +5,21 @@ using UnityEngine;
 public class Monster : MonoBehaviour
 {
     public Transform playerRespawnPoint;
+    public float noiseDelay;
     //public GameObject player;
+
+
+    private void Start()
+    {
+        float delay = Random.Range(0f, noiseDelay);
+        GetComponent<AudioSource>().PlayDelayed(delay);
+    }
+
+
+    public Monster(Transform resapwnPoint)
+    {
+        playerRespawnPoint = resapwnPoint;
+    }
 
     private void OnTriggerEnter(Collider other)
     {
