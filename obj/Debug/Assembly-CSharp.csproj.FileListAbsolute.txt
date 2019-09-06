@@ -1,2 +1,0 @@
-C:\Users\Nano\Desktop\Unity Projects\Blinded\obj\Debug\Assembly-CSharp.csprojAssemblyReference.cache
-C:\Users\Nano\Desktop\Unity Projects\Blinded\obj\Debug\Assembly-CSharp.csproj.CoreCompileInputs.cache
