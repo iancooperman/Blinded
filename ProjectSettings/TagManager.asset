@@ -13,6 +13,11 @@ TagManager:
   - FootstepDirt
   - FootstepMud
   - FootstepDeath
+  - Size 1 Wall
+  - Size 2 Wall
+  - Size 3 Wall
+  - Column
+  - Outer Wall
   layers:
   - Default
   - TransparentFX
